@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ranking_id: 1
+  rating: 1
+  company_id: 1
+  image: 
+  weekdays_start: MyString
+  time: MyString
+  weekdays_end: 2020-03-20 16:40:27
+  holidays_start: 2020-03-20 16:40:27
+  holidays_end: 2020-03-20 16:40:27
+  size_m: MyString
+  integer: MyString
+  size_l: 1
+  walk_time: 1
+  length: 1
+  power: 1
+  wifi: MyString
+
+two:
+  ranking_id: 1
+  rating: 1
+  company_id: 1
+  image: 
+  weekdays_start: MyString
+  time: MyString
+  weekdays_end: 2020-03-20 16:40:27
+  holidays_start: 2020-03-20 16:40:27
+  holidays_end: 2020-03-20 16:40:27
+  size_m: MyString
+  integer: MyString
+  size_l: 1
+  walk_time: 1
+  length: 1
+  power: 1
+  wifi: MyString

@@ -1,0 +1,97 @@
+<%= form_with(model: store, local: true) do |form| %>
+  <% if store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(store.errors.count, "error") %> prohibited this store from being saved:</h2>
+
+      <ul>
+        <% store.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ranking_id %>
+    <%= form.number_field :ranking_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.number_field :rating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.number_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weekdays_start %>
+    <%= form.text_field :weekdays_start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.text_field :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weekdays_end %>
+    <%= form.time_select :weekdays_end %>
+  </div>
+
+  <div class="field">
+    <%= form.label :holidays_start %>
+    <%= form.time_select :holidays_start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :holidays_end %>
+    <%= form.time_select :holidays_end %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size_m %>
+    <%= form.text_field :size_m %>
+  </div>
+
+  <div class="field">
+    <%= form.label :integer %>
+    <%= form.text_field :integer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size_l %>
+    <%= form.number_field :size_l %>
+  </div>
+
+  <div class="field">
+    <%= form.label :walk_time %>
+    <%= form.number_field :walk_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :length %>
+    <%= form.number_field :length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :power %>
+    <%= form.number_field :power %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wifi %>
+    <%= form.text_field :wifi %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
